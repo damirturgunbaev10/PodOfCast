@@ -1,0 +1,192 @@
+.news {
+  width: 100%;
+  height: 1250px;
+
+  &__container {
+    position: relative;
+    margin: auto;
+    width: 1440px;
+    height: 1303px;
+  }    
+  &__star{
+        position: absolute;
+        top: 200px;
+        left: 43px;
+        z-index: 2;
+    }
+
+
+  &__title {
+    width: 522px;
+    margin: 140px auto;
+
+
+    &__h2 {
+      font-family: "Montserrat Alternates";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 59.3px;
+      line-height: 120%;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #000000;
+    }
+
+    &__text {
+      margin-top: 20px;
+      font-family: "Montserrat Alternates";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22.65px;
+      line-height: 160%;
+      text-align: center;
+      color: #4d4d4d;
+    }
+  }
+
+  &__cards {
+    width: 1160px;
+    height: 634px;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+  }
+
+  &__card {
+    position: relative;
+    z-index: 3;
+    background-color: #fff;
+    border: 2px solid #000000;
+    box-shadow: 10px 10px 0px #000000;
+    border-radius: 8px;
+    width: 570px;
+    height: 634px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px;
+
+    &__mid {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      margin-top: 40px;
+
+      &__sbt {
+        margin-bottom: 6px;
+        font-family: "Montserrat Alternates";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 160%;
+        color: #4d4d4d;
+      }
+
+      &__sbt2{
+        color: #cd4631;
+      }
+
+      &__title2{
+        color: #cd4631;
+      }
+
+      &__title {
+        margin-bottom: 20px;
+        font-family: "Montserrat Alternates";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36.65px;
+        line-height: 140%;
+        letter-spacing: -0.02em;
+        color: #cd4631;
+      }
+
+      &__text {
+        margin-bottom: 16px;
+        width: 538px;
+        font-family: "Montserrat Alternates";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 160%;
+        color: #4d4d4d;
+      }
+
+      &__hr {
+        width: 538px;
+        height: 0px;
+        border: 0.5px solid #4d4d4d;
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__btns {
+        display: flex;
+        gap: 6px;
+      }
+
+      &__btn1 {
+        @extend %episode-btn;
+        width: 78px;
+      }
+
+      &__btn2 {
+        @extend %episode-btn;
+        width: 69px;
+      }
+
+      &__btn3 {
+        @extend %episode-btn;
+        width: 42px;
+      }
+
+      &__btn4 {
+        @extend %episode-btn;
+        width: 74px;
+      }
+
+      &__btn5 {
+        @extend %episode-btn;
+        width: 105px;
+      }
+
+      &__text {
+        font-family: "Montserrat Alternates";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 160%;
+        color: #4d4d4d;
+      }
+    }
+  }
+
+  &__card2{
+    box-shadow: none;
+  }
+
+  &__highlight{
+    position: absolute;
+    top: 870px;
+    left: 1230px;
+  }
+
+  &__btn{
+
+    width: 172px;
+    margin: 85px auto;
+      &__content{
+    @extend %black-btn;
+    width: 172px;
+    height: 62px;
+  }
+  }
+  
+  &__scribble{
+    width: 150px;
+    margin: 115px auto;
+  }
+}

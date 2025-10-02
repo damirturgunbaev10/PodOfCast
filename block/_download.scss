@@ -1,0 +1,137 @@
+.download {
+  width: 100%;
+  height: 816px;
+  background-color: #edf3f7;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 1440px;
+    height: 816px;
+    margin: auto;
+  }
+  &__title {
+    width: 486px;
+    height: 254px;
+    padding-top: 135px;
+
+    &__beta {
+      margin: auto;
+      font-family: "Montserrat Alternates";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 160%;
+      color: #cd4631;
+      padding: 3px 6px;
+      width: 52px;
+      height: 28px;
+      border: 1px solid #cd4631;
+      border-radius: 4px;
+    }
+
+    &__h2 {
+      margin-top: 20px;
+      width: 486px;
+      font-family: "Montserrat Alternates";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 59.3px;
+      line-height: 120%;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #000000;
+    }
+
+    &__text {
+        margin-top: 28px;
+      font-family: "Montserrat Alternates";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22.65px;
+      line-height: 160%;
+      text-align: center;
+      color: #4d4d4d;
+    }
+  }
+
+  &__btn{
+    width: 210px;
+    margin-top: 270px;
+
+      &__cont{
+    @extend %black-btn;
+    width: 210px;
+    height: 62px;
+  }
+  }
+
+  &__btn img{
+    position: absolute;
+    top: 450px;
+    left: 780px;
+  }
+  
+  &__social__media{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__social__media p{
+font-family: 'Montserrat Alternates';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 160%;
+color: #4D4D4D;
+  }
+
+  &__social__media__imgs{
+    display: flex;
+    gap:20px;
+  }
+
+  &__left__screen{
+    position: absolute;
+    left: -41px;
+    top: 400px;
+
+  }
+
+  &__right__screen{
+    position: absolute;
+    z-index: 2;
+    right:-40px;
+    top: 80px;
+  }
+
+  &__up__sparkle{
+    position: absolute;
+    left: 60px;
+    top: 292px;
+  }
+
+    &__mid__sparkle{
+    position: absolute;
+    left: 74px;
+    top: 317px;
+  }
+
+  &__low__sparkle{
+    position: absolute;
+    z-index: 2;
+    left: -34px;
+    top: 324px;
+  }
+
+  &__shape{
+    position: absolute;
+    right: 80px;
+    bottom: 0;
+  }
+}

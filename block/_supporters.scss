@@ -1,0 +1,39 @@
+.supporters {
+  width: 100%;
+  height: 124px;
+  margin-top: 60px;
+
+  &__container {
+    width: 1160px;
+    height: 124px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h4{
+font-family: 'Montserrat Alternates';
+font-style: normal;
+font-weight: 700;
+font-size: 22.65px;
+line-height: 140%;
+letter-spacing: -0.02em;
+color: #000000;
+  }
+
+  &__hr {
+    width: 1160px;
+    height: 0px;
+    border: 1.5px solid #4d4d4d;
+    border-radius: 20px;
+  }
+
+  &__logos{
+    width: 1160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
