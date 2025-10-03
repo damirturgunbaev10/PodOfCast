@@ -6,7 +6,6 @@ const nextBtn = document.querySelector(".next");
 const gap = 20;
 const itemWidth = 373 + gap;
 
-// Чтобы сделать бесконечным, клонируем элементы
 items.forEach(item => {
   const clone1 = item.cloneNode(true);
   const clone2 = item.cloneNode(true);
@@ -15,7 +14,7 @@ items.forEach(item => {
 });
 
 const allItems = document.querySelectorAll(".carousel-item");
-let index = items.length; // начинаем с середины (оригинальные элементы)
+let index = items.length;
 
 function updateCarousel() {
   track.style.transform = `translateX(-${index * itemWidth}px)`;
@@ -50,7 +49,6 @@ function prevSlide() {
 nextBtn.addEventListener("click", nextSlide);
 prevBtn.addEventListener("click", prevSlide);
 
-// авто-прокрутка
 setInterval(nextSlide, 4000);
 
 updateCarousel();
@@ -63,7 +61,6 @@ const customItemsArray = Array.from(document.querySelectorAll('.custom-carousel-
 const customGap = 20;
 let customIndex = 0;
 
-// Бесконечный трек
 customTrack.innerHTML = `
   ${customItemsArray.map(i => i.outerHTML).join('')}
   ${customItemsArray.map(i => i.outerHTML).join('')}
@@ -73,14 +70,12 @@ const customAllItems = customTrack.querySelectorAll('.custom-carousel-item');
 const customStartIndex = customItemsArray.length;
 customIndex = customStartIndex;
 
-// Вычисляем ширину элемента с gap
 function getItemWidth() {
   return customAllItems[0].offsetWidth + customGap;
 }
 
 customTrack.style.transform = `translateX(-${customIndex * getItemWidth()}px)`;
 
-// Перемотка
 function customMoveTo(idx) {
   customTrack.style.transition = 'transform 0.5s ease';
   customTrack.style.transform = `translateX(-${idx * getItemWidth()}px)`;
@@ -98,10 +93,7 @@ function customMoveTo(idx) {
     }
   }, 500);
 }
-
-// Кнопки
 customNextBtn.addEventListener('click', () => customMoveTo(customIndex + 1));
 customPrevBtn.addEventListener('click', () => customMoveTo(customIndex - 1));
 
-// Автопрокрутка
 setInterval(() => customMoveTo(customIndex + 1), 4000);
